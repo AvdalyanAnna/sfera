@@ -10794,7 +10794,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
   #file .upload-area__save {
     height: 30px;
     background: #4B5EFF;
@@ -10808,7 +10809,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
 #file .cr-boundary {
   position: absolute;
   top: 0; }
