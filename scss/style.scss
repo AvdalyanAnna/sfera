@@ -1159,7 +1159,6 @@ ul {
       display: block;
       cursor: pointer;
       padding: 12px 0;
-
       span {
         position: relative;
         display: block;
@@ -1168,7 +1167,6 @@ ul {
         background: #fff;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-
         &:before,
         &:after {
           content: '';
@@ -1180,25 +1178,20 @@ ul {
           -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
         }
-
         &:before {
           top: -6px;
         }
-
         &:after {
           top: 6px;
         }
       }
-
       &.active {
         span {
           background: transparent;
-
           &:before {
             -webkit-transform: rotate(45deg) translate(5px, 6px);
             transform: rotate(45deg) translate(5px, 6px);
           }
-
           &:after {
             -webkit-transform: rotate(-45deg) translate(5px, -6px);
             transform: rotate(-45deg) translate(5px, -6px);
@@ -3096,7 +3089,7 @@ ul {
       height: 50px;
       border-radius: 5px;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.96) 100%),
-      url(../images/store2.png) no-repeat;
+        url(../images/store2.png) no-repeat;
       background-size: cover;
       background-position: center;
       margin-right: 9px;
@@ -4202,7 +4195,6 @@ ul {
             background-color: transparent;
           }
         }
-
         li {
           margin-bottom: 15px;
 
@@ -4815,14 +4807,14 @@ ul {
       &:hover {
         color: #858ebd;
         background: linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(270deg, #3582f4 4.44%, #5d6fff 100%),
-        #d9d9d9;
+          #d9d9d9;
         box-shadow: 0px 0px 16px rgba(179, 192, 231, 0.32);
       }
 
       &.disabled {
         color: #858ebd;
         background: linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(270deg, #3582f4 4.44%, #5d6fff 100%),
-        #d9d9d9;
+          #d9d9d9;
         box-shadow: 0px 0px 16px rgba(179, 192, 231, 0.32);
 
         &:hover {
@@ -5068,28 +5060,28 @@ ul {
       margin-bottom: 0;
     }
 
-    &-answer {
+    &-answer{
       font-size: 14px;
-      line-height: 20px;
-      font-weight: 300;
-      color: #686b7b;
-      margin-bottom: 20px;
-      padding: 12px 16px;
-      border: 0;
-      resize: none;
-      width: 100%;
-      transition: 300ms;
-      margin-bottom: -10px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #686b7b;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 0;
+    resize: none;
+    width: 100%;
+    transition: 300ms;
+    margin-bottom: -10px;
       background: #fff;
       border-radius: 10px;
       margin-bottom: 20px;
-      display: none;
+   display: none;
 
-      &.active {
-        display: block;
+      &.active{
+      display: block;
       }
 
-      &.save {
+      &.save{
         padding: 0;
         background: none;
       }
@@ -5877,7 +5869,7 @@ ul {
         margin-right: 16px;
         color: #ffffff;
         background: linear-gradient(270deg, #f43557 4.44%, #f82a4f 100%), linear-gradient(0deg, #858ebd, #858ebd),
-        #d9d9d9;
+          #d9d9d9;
 
         @media only screen and (max-width: 767px) {
           margin-right: 0;
@@ -5887,7 +5879,7 @@ ul {
 
         &:hover {
           background: linear-gradient(270deg, #f82a4f 4.44%, #f43557 100%), linear-gradient(0deg, #858ebd, #858ebd),
-          #d9d9d9;
+            #d9d9d9;
         }
 
         img {
@@ -6050,7 +6042,7 @@ ul {
         width: 193px;
         height: 45px;
         background: linear-gradient(270deg, #3582f4 4.44%, #5d6fff 100%), linear-gradient(0deg, #858ebd, #858ebd),
-        #d9d9d9;
+          #d9d9d9;
         border-radius: 50px;
         font-size: 18px;
         font-weight: 600;
@@ -6452,7 +6444,7 @@ ul {
 
       &:hover {
         background: linear-gradient(270deg, #5d6fff 4.44%, #3582f4 100%), linear-gradient(0deg, #858ebd, #858ebd),
-        #d9d9d9;
+          #d9d9d9;
       }
     }
 
@@ -6475,7 +6467,7 @@ ul {
 
       &:hover {
         background: linear-gradient(270deg, #ff975d 4.44%, #ffc107 100%), linear-gradient(0deg, #858ebd, #858ebd),
-        #d9d9d9;
+          #d9d9d9;
       }
     }
 
@@ -9706,7 +9698,7 @@ ul {
 
       &:hover {
         background: linear-gradient(270deg, #5d6fff 4.44%, #3582f4 100%), linear-gradient(0deg, #858ebd, #858ebd),
-        #d9d9d9;
+          #d9d9d9;
       }
     }
   }
@@ -10046,26 +10038,26 @@ ul {
       overflow: hidden;
     }
 
-    &-title {
+    &-title{
       position: relative;
       display: flex;
       align-items: center;
       cursor: pointer;
       margin-left: 10px;
 
-      &--icon {
+      &--icon{
         display: flex;
         align-items: center;
         justify-content: center;
 
-        &.active {
-          svg {
-            path {
-              &:nth-child(1) {
+        &.active{
+          svg{
+            path{
+              &:nth-child(1){
                 stroke: #FFC107;
               }
 
-              &:nth-child(2) {
+              &:nth-child(2){
                 stroke: #FFC107;
                 fill: #FFC107;
                 stroke-width: 0;
@@ -10075,7 +10067,7 @@ ul {
         }
       }
 
-      &--drop {
+      &--drop{
         transition: 300ms;
         position: absolute;
         opacity: 0;
@@ -10089,7 +10081,7 @@ ul {
         padding: 4px 6px;
         border-radius: 6px;
 
-        &.active {
+        &.active{
           z-index: 2;
           opacity: 1;
         }
@@ -10146,7 +10138,7 @@ ul {
       position: relative;
       border-bottom: 1px solid #eceef6;
 
-      &:after {
+      &:after{
         content: '';
         display: block;
         width: 4px;
@@ -10167,7 +10159,7 @@ ul {
         background: #f3f3f3;
       }
 
-      &.current {
+      &.current{
         background: #f7fff7;
       }
 
@@ -10195,8 +10187,8 @@ ul {
         }
       }
 
-      &.current {
-        &:after {
+      &.current{
+        &:after{
           background: #E9EBFF;
         }
       }
@@ -10594,7 +10586,7 @@ ul {
 
       &:hover {
         background: linear-gradient(270deg, #5d6fff 4.44%, #3582f4 100%), linear-gradient(0deg, #858ebd, #858ebd),
-        #d9d9d9;
+          #d9d9d9;
       }
     }
 
@@ -12375,7 +12367,7 @@ ul {
 
       &.active {
         background: linear-gradient(270deg, #3582f4 4.44%, #5d6fff 100%), linear-gradient(0deg, #858ebd, #858ebd),
-        #d9d9d9;
+          #d9d9d9;
         box-shadow: none;
         color: #fff;
       }
@@ -12938,7 +12930,7 @@ ul {
     cursor: pointer;
     transition: 300ms;
 
-    &.active {
+    &.active{
       transform: rotate(90deg);
     }
   }
@@ -14641,7 +14633,7 @@ ul {
     border-radius: 10px;
 
     @media only screen and (max-width: 991px) {
-      padding: 20px;
+     padding: 20px; 
     }
 
     @media only screen and (max-width: 767px) {
@@ -14753,6 +14745,7 @@ ul {
     }
   }
 }
+
 
 .w-100 {
   width: 100%;
@@ -14935,13 +14928,10 @@ ul {
     transition: 300ms;
 
     &:hover {
-      text-decoration: underline;
+      color: #4B5EFF;
     }
   }
 
-  &-edit {
-    color: #4B5EFF;
-  }
 
   &-btns {
     display: flex;
@@ -14957,6 +14947,15 @@ ul {
     .small {
       font-size: 12px;
       line-height: 17px;
+    }
+    @media screen and (max-width: 445px) {
+      &-1{
+        flex-direction: column;
+        .profile-btn{
+          float: unset;
+          margin-top: 20px;
+        }
+      }
     }
   }
 
@@ -15274,7 +15273,9 @@ ul {
     max-width: 260px;
     border-radius: 24px;
     margin: 15px auto 41px;
-
+    @media screen and (max-width: 440px){
+      padding-top: 20px;
+    }
     &__title {
       font-size: 16px;
       line-height: 22px;

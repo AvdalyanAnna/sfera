@@ -515,13 +515,14 @@ $(document).ready(function () {
         $("body").append($temp);
         $temp.val($('#copy-text').text()).select();
         document.execCommand("copy");
+        alert('Кошелёк скопирован:')
         $temp.remove();
     })
 
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
-            reader.onload = function(e) {
+            reader.onload = function (e) {
                 $('#previewImage').attr('src', e.target.result);
                 var resize = new Croppie($('#previewImage')[0], {
                     viewport: {
@@ -533,14 +534,15 @@ $(document).ready(function () {
                         width: 255,
                         height: 255
                     },
-                    // showZoomer: false,
-                    // enableResize: true,
-                    // enableOrientation: true
+                    mouseWheelZoom: false,
+                    showZoomer: false,
+                    enableResize: false,
+                    enableOrientation: false
                 });
                 $('#use').fadeIn();
-                $('#use').on('click', function() {
-                    resize.result('base64').then(function(dataImg) {
-                        var data = [{ image: dataImg }, { name: 'myimgage.jpg' }];
+                $('#use').on('click', function () {
+                    resize.result('base64').then(function (dataImg) {
+                        var data = [{image: dataImg}, {name: 'myimgage.jpg'}];
                         // use ajax to send data to php
                         $('#result').attr('src', dataImg);
                         // $('#fileInput').attr('value', dataImg);
@@ -551,7 +553,7 @@ $(document).ready(function () {
         }
     }
 
-    $("#fileInput").change(function() {
+    $("#fileInput").change(function () {
         readURL(this);
     });
 

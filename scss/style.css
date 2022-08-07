@@ -10509,9 +10509,7 @@ ul {
   cursor: pointer;
   transition: 300ms; }
   .profile-edit:hover, .profile-delete:hover {
-    text-decoration: underline; }
-.profile-edit {
-  color: #4B5EFF; }
+    color: #4B5EFF; }
 .profile-btns {
   display: flex;
   gap: 11px; }
@@ -10523,6 +10521,12 @@ ul {
   .profile-desc .small {
     font-size: 12px;
     line-height: 17px; }
+  @media screen and (max-width: 445px) {
+    .profile-desc-1 {
+      flex-direction: column; }
+      .profile-desc-1 .profile-btn {
+        float: unset;
+        margin-top: 20px; } }
 .profile-btn {
   width: 121px;
   height: 27px;
@@ -10766,6 +10770,9 @@ ul {
   max-width: 260px;
   border-radius: 24px;
   margin: 15px auto 41px; }
+  @media screen and (max-width: 440px) {
+    #file .upload-area {
+      padding-top: 20px; } }
   #file .upload-area__title {
     font-size: 16px;
     line-height: 22px;
