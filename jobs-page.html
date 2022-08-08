@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./libs/swiper/swiper.css"/>
     <link rel="stylesheet" href="scss/style.css"/>
-
 </head>
 
 <body>
 <div class="wrapper">
-    <a href="#modal" data-fancybox="" class="home">
+    <a href="#modal" data-fancybox="" class="home"
+    >
         <div class="home__inner">
             <div class="home__value"></div>
-            <img src="images/home.svg" alt=""/>
-        </div>
+            <img src="images/home.svg" alt=""/></div
+        >
     </a>
 
     <div class="header">
@@ -440,184 +440,209 @@
         </div>
     </div>
 
-    <div class="store">
+    <div class="faq">
         <div class="container">
-            <div class="user-promo-code__inner">
-                <div class="block">
-                    <div class="block-title block-title-24 user-promo-code__title">Промокоды</div>
-                    <div class="user-promo-code__body">
-                        <div class="user-promo-code__header">
-                            <div class="user-promo-code__header-item">Магазин</div>
-                            <div class="user-promo-code__header-item">Промокод</div>
-                            <div class="user-promo-code__header-item">Сумма промокода</div>
-                            <div class="user-promo-code__header-item">Товар</div>
+            <div class="faq__content">
+                <div class="faq__tabs desk">
+                    <div class="faq__tab active" data-faq-tabs>Модератор</div>
+                    <div class="faq__tab" data-faq-tabs>Оператор</div>
+                    <div class="faq__tab" data-faq-tabs>Фасовщик</div>
+                    <div class="faq__tab" data-faq-tabs>Грузоперевозчик</div>
+                    <div class="faq__tab" data-faq-tabs>Пиар менеджер</div>
+                </div>
+                <div class="faq__tabs mobile">
+                    <div class="t-dropdown-block">
+                        <div class="t-dropdown-select">
+                            <input type="text" class="t-dropdown-input" readonly placeholder="FAQ"/>
                         </div>
-                        <div class="user-promo-code__table">
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__promo ">Sswfnf32f7DFDs</div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">1 420 <span>₽</span></div>
-                                    </div>
-                                    <div class="user-promo-code__time">
-                                        Детские товары
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__promo ">Sswfnf32f7DFDs</div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">1 420 <span>₽</span></div>
-                                    </div>
-                                    <div class="user-promo-code__time">
-                                        Чай/Кофе
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__promo ">Sswfnf32f7DFDs</div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">1 420 <span>₽</span></div>
-                                    </div>
-                                    <div class="user-promo-code__time">
-                                        Товары для дома и дачи
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__promo ">Sswfnf32f7DFDs</div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">1 420 <span>₽</span></div>
-                                    </div>
-                                    <div class="user-promo-code__time">
-                                        На весь товар
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="t-dropdown-list">
+                            <ul>
+                                <li class="t-dropdown-item" data-faq-tabs>Модератор</li>
+                                <li class="t-dropdown-item" data-faq-tabs>Оператор</li>
+                                <li class="t-dropdown-item" data-faq-tabs>Фасовщик</li>
+                                <li class="t-dropdown-item" data-faq-tabs>Грузоперевозчик</li>
+                                <li class="t-dropdown-item" data-faq-tabs>Пиар менеджер</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="block-title block-title-24 user-promo-code__title">Скидки от магазинов</div>
-                    <div class="user-promo-code__body">
-                        <div class="user-promo-code__header-shop">
-                            <div class="user-promo-code__header-item">Магазин</div>
-                            <div class="user-promo-code__header-item">Товар</div>
-                            <div class="user-promo-code__header-item text-center">Установленная скидка</div>
+                <div class="faq__items">
+                    <div class="faq__item" data-faq-content>
+                        <div class="faq__title">Вакансия: Модератор</div>
+                        <div class="faq__info">
+                            <p>
+                                <b>Описание вакансии:</b><br>
+                                Повседневная практика показывает, что постоянное информационно-пропагандистское
+                                обеспечение нашей деятельности способствует подготовки и реализации существенных
+                                финансовых и административных условий.
+                                Задача организации, в особенности же укрепление и развитие структуры позволяет оценить
+                                значение направлений
+                            </p>
+                            <p>
+                                <b>Условия работы:</b><br>
+
+                                прогрессивного развития. С другой стороны укрепление и развитие структуры в значительной
+                                степени обуславливает создание дальнейших направлений развития. Повседневная практика
+                                показывает, что реализация намеченных плановых заданий играет важную роль в формировании
+                                новых предложений.
+
+                            </p>
+                            <p>
+                                <b>Режим работы:</b><br>
+
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и
+                                уточнения позиций, занимаемых участниками в отношении.
+
+                            </p>
+                            <p>
+                                <b>Заработная плата:</b><br>
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении.
+                            </p>
                         </div>
-                        <div class="user-promo-code__table">
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item-shop">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">Детские товары</div>
-                                    </div>
-                                    <div class="user-promo-code__time text-center ">
-                                        10%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item-shop">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">Детские товары</div>
-                                    </div>
-                                    <div class="user-promo-code__time text-center ">
-                                        2%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item-shop">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">Детские товары</div>
-                                    </div>
-                                    <div class="user-promo-code__time text-center ">
-                                        5%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user-promo-code__items">
-                                <div class="user-promo-code__item-shop">
-                                    <div class="user-promo-code__start">
-                                        <div class="user-promo-code__image">
-                                            <img src="images/store.png" alt="">
-                                        </div>
-                                        <div class="user-promo-code__start-item">
-                                            <div class="user-promo-code__start-title">Название магазина</div>
-                                        </div>
-                                    </div>
-                                    <div class="user-promo-code__info">
-                                        <div class="user-promo-code__info-item">Детские товары</div>
-                                    </div>
-                                    <div class="user-promo-code__time text-center ">
-                                        1%
-                                    </div>
-                                </div>
-                            </div>
+                        <button class="faq__info-btn btn btn-primary">Откликнуться на вакансию</button>
+                    </div>
+                    <div class="faq__item" data-faq-content style="display: none;">
+                        <div class="faq__title">Вакансия: Модератор</div>
+                        <div class="faq__info">
+                            <p>
+                                <b>Описание вакансии:</b><br>
+                                Повседневная практика показывает, что постоянное информационно-пропагандистское
+                                обеспечение нашей деятельности способствует подготовки и реализации существенных
+                                финансовых и административных условий.
+                                Задача организации, в особенности же укрепление и развитие структуры позволяет оценить
+                                значение направлений
+                            </p>
+                            <p>
+                                <b>Условия работы:</b><br>
+
+                                прогрессивного развития. С другой стороны укрепление и развитие структуры в значительной
+                                степени обуславливает создание дальнейших направлений развития. Повседневная практика
+                                показывает, что реализация намеченных плановых заданий играет важную роль в формировании
+                                новых предложений.
+
+                            </p>
+                            <p>
+                                <b>Режим работы:</b><br>
+
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и
+                                уточнения позиций, занимаемых участниками в отношении.
+
+                            </p>
+                            <p>
+                                <b>Заработная плата:</b><br>
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении.
+                            </p>
                         </div>
+                        <button class="faq__info-btn btn btn-primary">Откликнуться на вакансию</button>
+
+                    </div>
+                    <div class="faq__item" data-faq-content style="display: none;">
+                        <div class="faq__title">Вакансия: Модератор</div>
+                        <div class="faq__info">
+                            <p>
+                                <b>Описание вакансии:</b><br>
+                                Повседневная практика показывает, что постоянное информационно-пропагандистское
+                                обеспечение нашей деятельности способствует подготовки и реализации существенных
+                                финансовых и административных условий.
+                                Задача организации, в особенности же укрепление и развитие структуры позволяет оценить
+                                значение направлений
+                            </p>
+                            <p>
+                                <b>Условия работы:</b><br>
+
+                                прогрессивного развития. С другой стороны укрепление и развитие структуры в значительной
+                                степени обуславливает создание дальнейших направлений развития. Повседневная практика
+                                показывает, что реализация намеченных плановых заданий играет важную роль в формировании
+                                новых предложений.
+
+                            </p>
+                            <p>
+                                <b>Режим работы:</b><br>
+
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и
+                                уточнения позиций, занимаемых участниками в отношении.
+
+                            </p>
+                            <p>
+                                <b>Заработная плата:</b><br>
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении.
+                            </p>
+                        </div>
+                        <button class="faq__info-btn btn btn-primary">Откликнуться на вакансию</button>
+
+                    </div>
+                    <div class="faq__item" data-faq-content style="display: none;">
+                        <div class="faq__title">Вакансия: Модератор</div>
+                        <div class="faq__info">
+                            <p>
+                                <b>Описание вакансии:</b><br>
+                                Повседневная практика показывает, что постоянное информационно-пропагандистское
+                                обеспечение нашей деятельности способствует подготовки и реализации существенных
+                                финансовых и административных условий.
+                                Задача организации, в особенности же укрепление и развитие структуры позволяет оценить
+                                значение направлений
+                            </p>
+                            <p>
+                                <b>Условия работы:</b><br>
+
+                                прогрессивного развития. С другой стороны укрепление и развитие структуры в значительной
+                                степени обуславливает создание дальнейших направлений развития. Повседневная практика
+                                показывает, что реализация намеченных плановых заданий играет важную роль в формировании
+                                новых предложений.
+
+                            </p>
+                            <p>
+                                <b>Режим работы:</b><br>
+
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и
+                                уточнения позиций, занимаемых участниками в отношении.
+
+                            </p>
+                            <p>
+                                <b>Заработная плата:</b><br>
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении.
+                            </p>
+                        </div>
+                        <button class="faq__info-btn btn btn-primary">Откликнуться на вакансию</button>
+
+                    </div>
+                    <div class="faq__item" data-faq-content style="display: none;">
+                        <div class="faq__title">Вакансия: Модератор</div>
+                        <div class="faq__info">
+                            <p>
+                                <b>Описание вакансии:</b><br>
+                                Повседневная практика показывает, что постоянное информационно-пропагандистское
+                                обеспечение нашей деятельности способствует подготовки и реализации существенных
+                                финансовых и административных условий.
+                                Задача организации, в особенности же укрепление и развитие структуры позволяет оценить
+                                значение направлений
+                            </p>
+                            <p>
+                                <b>Условия работы:</b><br>
+
+                                прогрессивного развития. С другой стороны укрепление и развитие структуры в значительной
+                                степени обуславливает создание дальнейших направлений развития. Повседневная практика
+                                показывает, что реализация намеченных плановых заданий играет важную роль в формировании
+                                новых предложений.
+
+                            </p>
+                            <p>
+                                <b>Режим работы:</b><br>
+
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и
+                                уточнения позиций, занимаемых участниками в отношении.
+
+                            </p>
+                            <p>
+                                <b>Заработная плата:</b><br>
+                                С другой стороны дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении.
+                            </p>
+                        </div>
+                        <button class="faq__info-btn btn btn-primary">Откликнуться на вакансию</button>
+
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
