@@ -515,8 +515,8 @@ $(document).ready(function () {
         $("body").append($temp);
         $temp.val($('#copy-text').text()).select();
         document.execCommand("copy");
-        alert('Кошелёк скопирован:')
         $temp.remove();
+        alert($('#copy-text').text())
     })
 
     function readURL(input) {
@@ -553,8 +553,9 @@ $(document).ready(function () {
         }
     }
 
-    $("#fileInput").change(function () {
+    $("#fileInput").change(function (e) {
         readURL(this);
+        $('.upload-area__label span').html(e.target.files[0].name)
     });
 
     function timer() {

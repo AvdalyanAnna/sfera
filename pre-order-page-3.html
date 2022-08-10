@@ -440,39 +440,50 @@
         </div>
     </div>
 
-    <div class="order">
+    <div class="order pre-order">
         <div class="container">
             <div class="order__spor">
                 <div class="order__spor-header">
-                    <div class="order__spor-title">Заказ <span>№</span>454545</div>
+                    <div class="order__spor-header--start">
+                        <div class="order__spor-title">Заказ <span>№</span>454545</div>
+                    </div>
                 </div>
-                <div class="order__spor-items align-items-start">
+                <div class="order__spor-items">
+                    <div class="new-order__status desk">
+                        <img src="images/order-wait.svg" alt="">
+                        Ожидает отзыва
+                    </div>
                     <a href="#" class="order__spor-image">
-                        <img src="images/store.png" alt=""/>
+                        <img src="images/store.png" alt="">
                     </a>
                     <div class="order__spor-intro">
-                        <div class="order__spor-time">
-                            <img src="images/history.svg" alt="history"/>
-                            Ожидает оплаты
-                        </div>
                         <div class="order__spor-item">
                             <div class="order__spor-head">
                                 <a href="#" class="order__spor-name">Philips 20DA6</a>
                                 <div class="order__spor-type dilivery">Предзаказ</div>
                                 <div class="order__spor-timer">
                                     <img src="images/time.svg" alt="time">
-                                    <span class="time" data-time="sep 1 22 23:59:59 " >
+                                    <span class="time" data-time="August 14 22 23:59:59 " >
                                         04:23:59:59
                                     </span>
+                                </div>
+                            </div>
+                            <div class="new-order__items">
+                                <div class="new-order__block">
+                                    <span>₽</span> 8 345 | <span>₿</span> 0.00241
+                                </div>
+                                <div class="new-order__status">
+                                    <img src="images/order-wait.svg" alt="">
+                                    Ожидает отзыва
                                 </div>
                             </div>
                             <div class="order__spor-blocks">
                                 <div class="order__spor-block">
                                     <div class="order__spor-start">
-                                        <img src="images/order-1.svg" alt=""/>
+                                        <img src="images/order-1.svg" alt="">
                                         Магазин:
                                     </div>
-                                    <a href="#" class="order__spor-end">Пятерочка</a>
+                                    <div class="order__spor-end">Пятёрочка</div>
                                 </div>
                                 <div class="order__spor-block">
                                     <div class="order__spor-start">
@@ -483,7 +494,7 @@
                                 </div>
                                 <div class="order__spor-block">
                                     <div class="order__spor-start"><img src="images/order-2.svg" alt=""/>Город:</div>
-                                    <div class="order__spor-end">Москва/м. Кузьминки</div>
+                                    <div class="order__spor-end"> Москва/м. Кузьминки </div>
                                 </div>
                                 <div class="order__spor-block">
                                     <div class="order__spor-start">
@@ -492,6 +503,15 @@
                                     </div>
                                     <div class="order__spor-end">2 шт</div>
                                 </div>
+                                <div class="order__spor-block">
+                                    <div class="order__spor-start">
+                                        <img src="images/order-3.svg" alt="">
+                                        Доставка:
+                                    </div>
+                                    <div class="order__spor-end">Курьером</div>
+                                </div>
+
+
                             </div>
                         </div>
                         <div class="order__spor-values">
@@ -501,11 +521,11 @@
                     </div>
                 </div>
                 <div class="order__spor-btn-list">
-                    <div class="d-flex">
-                        <button class="btn btn-danger btn-border-50 order__spor-btn-item">
+                    <div class="d-flex justify-content-start">
+                        <button class="btn btn-danger btn-border-50 order__spor-btn-item btn-fz-18">
                             <img src="images/order-btn.svg" alt="order-btn">
                             Открыть спор</button>
-                        <button class="btn btn-shadow btn-border-50 order__spor-btn-item">Задать вопрос по товару</button>
+                        <button class="btn btn-shadow btn-border-50 order__spor-btn-item btn-fz-18">Задать вопрос по товару</button>
                     </div>
                 </div>
             </div>
@@ -555,7 +575,7 @@
                                         <input type="radio" class="rating__item" value="5" name="rating">
                                     </div>
                                 </div>
-                                <div class="rating__value" style="opacity: 0;">4.5</div>
+                                <div class="rating__value" style="opacity: 0;">5</div>
                             </div>
                         </div>
                     </div>
