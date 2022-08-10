@@ -1,0 +1,259 @@
+.order__spor {
+  &-btn {
+    &-item {
+      padding: 10px 26px;
+      max-width: fit-content;
+      width: 100%;
+      white-space: nowrap;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .btn {
+        margin-top: 0;
+      }
+
+      .d-flex {
+        gap: 15px;
+        width: 100%;
+        justify-content: flex-end;
+
+        &.justify-content-start {
+          justify-content: flex-start;
+        }
+
+        @media only screen and (max-width: 767px) {
+          gap: 10px 15px;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          &.justify-content-start {
+            justify-content: center;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+
+  &-timer {
+    margin-left: 14px;
+    border: 1px solid #4B5EFF;
+    border-radius: 5px;
+    padding: 1px 4px 1px 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .time {
+      font-weight: 400;
+      font-size: 14px;
+      color: #5A607F;
+    }
+  }
+}
+
+.order__review-form {
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__stars {
+    .rating {
+      display: flex;
+      align-items: flex-end;
+      font-size: 40px;
+      line-height: 0.75;
+      transition: opacity 0.3s ease 0s;
+    }
+
+    .rating.rating_sending {
+      opacity: 0.2;
+    }
+
+    .rating.rating_set .rating__active,
+    .rating.rating_set .rating__item {
+      cursor: pointer;
+    }
+
+    .rating__body {
+      position: relative;
+    }
+
+    .rating__body::before {
+      content: '';
+      background-image: url(../images/stars-grey.jpg);
+      width: 215px;
+      height: 37px;
+      display: block;
+      color: #858EBD;
+    }
+
+    .rating__active {
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .rating__active::before {
+      content: "";
+      background-image: url(../images/stars-yellow.jpg);
+      position: absolute;
+      width: 215px;
+      height: 37px;
+      top: 0;
+      left: 0;
+      color: #FFC107;
+    }
+
+    .rating__items {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .rating__item {
+      flex: 0 0 20%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    .rating__value {
+      font-size: 50%;
+      line-height: 1;
+      padding: 0px 0px 0px 10px;
+    }
+
+  }
+}
+
+.pre-order {
+  .new-order__items {
+    @media only screen and (max-width: 991px) {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order__spor-image {
+    @media only screen and (max-width: 991px) {
+      min-width: auto;
+      width: 100%;
+      margin: 0 auto 15px auto;
+      height: auto;
+    }
+  }
+
+  .order__spor-items {
+
+    position: relative;
+
+    @media only screen and (max-width: 991px) {
+
+      display: block;
+      background: none;
+    }
+  }
+
+  .order__spor-item {
+    @media only screen and (max-width: 1160px) {
+      flex: 1;
+    }
+  }
+
+  .order__spor-blocks {
+    position: relative;
+    padding-top: 8px;
+    min-height: 90px;
+    align-items: flex-start;
+    grid-template-rows: 20px;
+    row-gap: 10px;
+
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 2px;
+      height: 90px;
+      background: #ffffff;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &::before {
+      left: 306px;
+
+      @media only screen and (max-width: 1380px) {
+        left: 250px;
+      }
+
+      @media only screen and (max-width: 1160px) {
+        content: unset;
+      }
+    }
+
+    &::after {
+      right: -100px;
+
+      @media only screen and (max-width: 1380px) {
+        right: -10px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        content: unset;
+      }
+    }
+  }
+
+  .order__spor-time {
+    @media only screen and (max-width: 1160px) {
+      top: 18px;
+      right: 7px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      top: 55px;
+      right: auto;
+    }
+  }
+
+  .order__spor-values {
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .order__spor-head {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .order__spor-timer {
+    margin-left: 0;
+  }
+
+  .order__spor-name {
+    margin-right: 0;
+  }
+}

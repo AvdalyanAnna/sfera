@@ -769,7 +769,7 @@ ul {
         }
       }
 
-      ul > li {
+      ul>li {
         margin-bottom: 22px;
 
         &:last-child {
@@ -875,7 +875,7 @@ ul {
     margin-right: 35px;
 
     @media only screen and (max-width: 1380px) {
-      width: 260px;
+      width: 340px;
       margin-right: 20px;
     }
 
@@ -1159,6 +1159,7 @@ ul {
       display: block;
       cursor: pointer;
       padding: 12px 0;
+
       span {
         position: relative;
         display: block;
@@ -1167,6 +1168,7 @@ ul {
         background: #fff;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
+
         &:before,
         &:after {
           content: '';
@@ -1178,20 +1180,25 @@ ul {
           -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
         }
+
         &:before {
           top: -6px;
         }
+
         &:after {
           top: 6px;
         }
       }
+
       &.active {
         span {
           background: transparent;
+
           &:before {
             -webkit-transform: rotate(45deg) translate(5px, 6px);
             transform: rotate(45deg) translate(5px, 6px);
           }
+
           &:after {
             -webkit-transform: rotate(-45deg) translate(5px, -6px);
             transform: rotate(-45deg) translate(5px, -6px);
@@ -1316,8 +1323,7 @@ ul {
       box-shadow: 0px 4px 17px 5px rgba(179, 192, 231, 0.32);
     }
 
-    &-block {
-    }
+    &-block {}
   }
 
   &__image {
@@ -4195,6 +4201,7 @@ ul {
             background-color: transparent;
           }
         }
+
         li {
           margin-bottom: 15px;
 
@@ -4745,8 +4752,7 @@ ul {
         column-gap: 50px;
       }
 
-      @media only screen and (max-width: 1160px) {
-      }
+      @media only screen and (max-width: 1160px) {}
     }
 
     &-head {
@@ -5060,28 +5066,28 @@ ul {
       margin-bottom: 0;
     }
 
-    &-answer{
+    &-answer {
       font-size: 14px;
-    line-height: 20px;
-    font-weight: 300;
-    color: #686b7b;
-    margin-bottom: 20px;
-    padding: 12px 16px;
-    border: 0;
-    resize: none;
-    width: 100%;
-    transition: 300ms;
-    margin-bottom: -10px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #686b7b;
+      margin-bottom: 20px;
+      padding: 12px 16px;
+      border: 0;
+      resize: none;
+      width: 100%;
+      transition: 300ms;
+      margin-bottom: -10px;
       background: #fff;
       border-radius: 10px;
       margin-bottom: 20px;
-   display: none;
+      display: none;
 
-      &.active{
-      display: block;
+      &.active {
+        display: block;
       }
 
-      &.save{
+      &.save {
         padding: 0;
         background: none;
       }
@@ -6484,6 +6490,7 @@ ul {
       @media only screen and (max-width: 991px) {
         width: 230px;
       }
+
       @media only screen and (max-width: 767px) {
         width: 100%;
       }
@@ -9297,6 +9304,7 @@ ul {
     &-items {
       display: flex;
       align-items: center;
+
       @media only screen and (max-width: 767px) {
         margin-top: 10px;
         justify-content: space-between;
@@ -10038,26 +10046,26 @@ ul {
       overflow: hidden;
     }
 
-    &-title{
+    &-title {
       position: relative;
       display: flex;
       align-items: center;
       cursor: pointer;
       margin-left: 10px;
 
-      &--icon{
+      &--icon {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        &.active{
-          svg{
-            path{
-              &:nth-child(1){
+        &.active {
+          svg {
+            path {
+              &:nth-child(1) {
                 stroke: #FFC107;
               }
 
-              &:nth-child(2){
+              &:nth-child(2) {
                 stroke: #FFC107;
                 fill: #FFC107;
                 stroke-width: 0;
@@ -10067,7 +10075,7 @@ ul {
         }
       }
 
-      &--drop{
+      &--drop {
         transition: 300ms;
         position: absolute;
         opacity: 0;
@@ -10081,7 +10089,7 @@ ul {
         padding: 4px 6px;
         border-radius: 6px;
 
-        &.active{
+        &.active {
           z-index: 2;
           opacity: 1;
         }
@@ -10138,7 +10146,7 @@ ul {
       position: relative;
       border-bottom: 1px solid #eceef6;
 
-      &:after{
+      &:after {
         content: '';
         display: block;
         width: 4px;
@@ -10159,7 +10167,7 @@ ul {
         background: #f3f3f3;
       }
 
-      &.current{
+      &.current {
         background: #f7fff7;
       }
 
@@ -10187,8 +10195,8 @@ ul {
         }
       }
 
-      &.current{
-        &:after{
+      &.current {
+        &:after {
           background: #E9EBFF;
         }
       }
@@ -10964,8 +10972,7 @@ ul {
     &:nth-child(7) {
       border-bottom: 1px solid rgba(179, 192, 231, 0.32);
 
-      @media only screen and (max-width: 991px) {
-      }
+      @media only screen and (max-width: 991px) {}
     }
   }
 
@@ -12002,7 +12009,7 @@ ul {
     }
 
     @media only screen and (max-width: 767px) {
-      & > div {
+      &>div {
         min-width: 800px;
       }
     }
@@ -12930,7 +12937,7 @@ ul {
     cursor: pointer;
     transition: 300ms;
 
-    &.active{
+    &.active {
       transform: rotate(90deg);
     }
   }
@@ -14633,7 +14640,7 @@ ul {
     border-radius: 10px;
 
     @media only screen and (max-width: 991px) {
-     padding: 20px; 
+      padding: 20px;
     }
 
     @media only screen and (max-width: 767px) {
@@ -14811,7 +14818,8 @@ ul {
     justify-content: space-between;
     gap: 23px;
     margin-bottom: 67px;
-    @media screen and (max-width: 991px){
+
+    @media screen and (max-width: 991px) {
       flex-direction: column;
     }
   }
@@ -14826,7 +14834,8 @@ ul {
     .profile-title {
       padding: 20px 20px 17px 16px;
     }
-    @media screen and (max-width: 991px){
+
+    @media screen and (max-width: 991px) {
       width: 100%;
     }
   }
@@ -14835,7 +14844,8 @@ ul {
     background: #ffffff;
     border-radius: 10px;
     width: 50%;
-    @media screen and (max-width: 991px){
+
+    @media screen and (max-width: 991px) {
       width: 100%;
     }
   }
@@ -14868,7 +14878,8 @@ ul {
       letter-spacing: -0.015em;
       color: #20222F;
       margin-bottom: 14px;
-      @media screen and (max-width: 480px){
+
+      @media screen and (max-width: 480px) {
         font-size: 16px;
         line-height: 20px;
       }
@@ -14883,7 +14894,8 @@ ul {
       line-height: 20px;
       color: #3C3F4E;
       margin-bottom: 15px;
-      @media screen and (max-width: 480px){
+
+      @media screen and (max-width: 480px) {
         font-size: 12px;
         line-height: 16px;
       }
@@ -14897,7 +14909,8 @@ ul {
       font-size: 16px;
       line-height: 20px;
       color: #3C3F4E;
-      @media screen and (max-width: 480px){
+
+      @media screen and (max-width: 480px) {
         font-size: 12px;
         line-height: 16px;
       }
@@ -14917,7 +14930,8 @@ ul {
     }
   }
 
-  &-edit, &-delete {
+  &-edit,
+  &-delete {
     font-size: 12px;
     line-height: 20px;
     color: #222653;
@@ -14948,10 +14962,12 @@ ul {
       font-size: 12px;
       line-height: 17px;
     }
+
     @media screen and (max-width: 445px) {
-      &-1{
+      &-1 {
         flex-direction: column;
-        .profile-btn{
+
+        .profile-btn {
           float: unset;
           margin-top: 20px;
         }
@@ -15020,9 +15036,11 @@ ul {
       color: #232855;
       counter-increment: list;
       position: relative;
-      @media screen and (max-width: 456px){
+
+      @media screen and (max-width: 456px) {
         order: 0;
       }
+
       &::before {
         content: "" counter(list) ".  ";
       }
@@ -15038,7 +15056,8 @@ ul {
     flex-wrap: wrap;
     background: #ffffff;
     border-radius: 10px;
-    @media screen and (max-width: 480px){
+
+    @media screen and (max-width: 480px) {
       margin-left: 0;
     }
 
@@ -15046,10 +15065,12 @@ ul {
       max-width: 250px;
       display: block;
       width: calc(50% - 20px);
-      @media screen and (max-width: 480px){
+
+      @media screen and (max-width: 480px) {
         width: 100%;
         max-width: 100%;
       }
+
       input {
         width: 100%;
         height: 35px;
@@ -15127,7 +15148,8 @@ ul {
     &-block {
       max-width: 250px;
       width: calc(50% - 20px);
-      @media screen and (max-width: 480px){
+
+      @media screen and (max-width: 480px) {
         width: 100%;
         max-width: 100%;
       }
@@ -15270,12 +15292,14 @@ ul {
 #file {
   .upload-area {
     width: 100%;
-    max-width: 260px;
+    max-width: 340px;
     border-radius: 24px;
     margin: 15px auto 41px;
-    @media screen and (max-width: 440px){
+
+    @media screen and (max-width: 440px) {
       padding-top: 20px;
     }
+
     &__title {
       font-size: 16px;
       line-height: 22px;
@@ -15291,11 +15315,13 @@ ul {
       letter-spacing: -0.015em;
       color: #3C3F4E;
     }
-    &__btns{
+
+    &__btns {
       display: flex;
       gap: 7px;
     }
-    &__label{
+
+    &__label {
       height: 30px;
       background: #FFFFFF;
       border: 1px solid #D8D8D8;
@@ -15311,7 +15337,8 @@ ul {
       width: 100%;
       cursor: pointer;
     }
-    &__save{
+
+    &__save {
       height: 30px;
       background: #4B5EFF;
       border: 1px solid #4B5EFF;
@@ -15338,8 +15365,9 @@ ul {
   .cr-slider-wrap {
     display: none;
   }
+
   .upload-area__drop-zoon {
-    max-width: 255px;
+    max-width: 340px;
     width: 100%;
     margin: 15px auto;
     position: relative;
@@ -15348,11 +15376,12 @@ ul {
   .drop-zoon__preview-image {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 255px;
-    height: 255px;
+    left: 0; 
+    width: 340px;
+    width: 100%;
+    height: 340px;
     object-fit: cover;
-    display: none;
+    display: none;  
     z-index: 1000;
     transition: opacity 300ms ease-in-out;
   }
@@ -15362,4 +15391,16 @@ ul {
   }
 }
 
+.upload-area__drop-zoon img {
+  max-width: 340px;
+  width: 100%;
+  height: 340px;
+}
+
+
+@import "blocks/ui";
 @import "blocks/two-factor-authentication";
+@import "blocks/user-promo-code";
+@import "blocks/feedback-page";
+@import "blocks/order";
+@import "blocks/creating-theme";
